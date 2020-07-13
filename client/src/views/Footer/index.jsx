@@ -7,6 +7,9 @@ const useStyle = makeStyles({
   facebook: {
     color: '#3b5998',
   },
+  instagram: {
+    color: '#000',
+  },
   email: {
     textAlign: 'center',
   },
@@ -16,8 +19,24 @@ function Footer() {
   const classes = useStyle();
 
   const top = [
-    <Facebook id="facebook" className={classes.facebook} fontSize="large" />,
-    <Instagram id="instagram" fontSize="large" />,
+    <a
+      href="https://www.facebook.com/goodkarmacoffeenz/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Facebook id="facebook" className={classes.facebook} fontSize="large" />,
+    </a>,
+    <a
+      href="https://www.instagram.com/goodkarmacoffeenz/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Instagram
+        id="instagram"
+        className={classes.instagram}
+        fontSize="large"
+      />
+    </a>,
   ];
   const bottom = (
     <Typography className={classes.email} variant="body1" color="primary">

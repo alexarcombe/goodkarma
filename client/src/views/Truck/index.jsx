@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
-import useWindowSize from '../../hooks/useWindowSize';
+import React from 'react';
+import { Grid, Typography } from '@material-ui/core';
+// import useWindowSize from '../../hooks/useWindowSize';
 import PageHeader from '../../components/PageHeader';
 import DisplayImage from '../../components/DisplayImage';
 import useScrollTop from '../../hooks/useScrollTop';
 
-const useStyles = makeStyles((theme) => ({
-  image: {
-    maxHeight: 'calc(100vh - 88px)',
-    width: 'auto !important',
-    margin: 'auto',
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   image: {
+//     maxHeight: 'calc(100vh - 88px)',
+//     width: 'auto !important',
+//     margin: 'auto',
+//   },
+// }));
 
 function Truck() {
   useScrollTop();
-  const classes = useStyles();
-  const size = useWindowSize();
-  const [paddingTop, setPaddingTop] = useState(null);
+  // const classes = useStyles();
+  // const size = useWindowSize();
+  // const [paddingTop, setPaddingTop] = useState(null);
 
-  useEffect(() => {
-    const maxHeight = size.height - 88;
-    const aspectRatioHeight = (1 / (40 / 23)) * size.width;
-    if (maxHeight < aspectRatioHeight) {
-      setPaddingTop(maxHeight);
-    } else {
-      setPaddingTop(aspectRatioHeight);
-    }
-  }, [size]);
+  // useEffect(() => {
+  //   const maxHeight = size.height - 88;
+  //   const aspectRatioHeight = (1 / (40 / 23)) * size.width;
+  //   if (maxHeight < aspectRatioHeight) {
+  //     setPaddingTop(maxHeight);
+  //   } else {
+  //     setPaddingTop(aspectRatioHeight);
+  //   }
+  // }, [size]);
 
-  const style = { display: 'flex', justifyContent: 'center' };
+  // const style = { display: 'flex', justifyContent: 'center' };
 
   return (
     <>

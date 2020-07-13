@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import PageHeader from '../../components/PageHeader';
 import ImageBox from '../../components/ImageBox';
 import useScrollTop from '../../hooks/useScrollTop';

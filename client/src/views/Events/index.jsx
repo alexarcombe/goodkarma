@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import PageHeader from '../../components/PageHeader';
 import useWindowSize from '../../hooks/useWindowSize';
@@ -28,8 +28,8 @@ function Events() {
 
   return (
     <Grid container>
-      <Grid className={classes.image} item xs={12} sm={4} md={5} />
-      <Grid item xs={12} sm={8} md={7} container justify="center">
+      <Grid className={classes.image} item xs={12} md={5} />
+      <Grid item xs={12} md={7} container justify="center">
         <Grid item xs={12} sm={11} md={10}>
           <PageHeader top="let's have a coffee" />
           <Typography variant="body1" align="center">
