@@ -1,0 +1,43 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>cafe</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith/>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>truck</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith/>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>about</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith/>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>event</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith/>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>faq</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith/>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
+
